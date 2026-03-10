@@ -24,19 +24,19 @@ let day = 0;
 
 switch (day) {
     case 0: console.log("SUNDAY");
-    break;
+        break;
     case 1: console.log("MONDAY");
-    break;
+        break;
     case 2: console.log("TUESDAY");
-    break;
+        break;
     case 3: console.log("WEDNESDAY");
-    break;
+        break;
     case 4: console.log("THURSDAY");
-    break;
+        break;
     case 5: console.log("FRIDAY");
-    break;
+        break;
     case 6: console.log("SATURDAY");
-    break;
+        break;
 }
 
 // let retired;
@@ -45,5 +45,45 @@ switch (day) {
 // else if (age < 65) retired = false;
 
 // ternary statement
-let status  = age < 65 ? "active" : "retired"; 
+let status = age < 65 ? "active" : "retired";
 console.log("Status:", status);
+
+
+// LOOPS
+
+// FOR loop -> when you know how many iterations you are going to do
+
+// start; stop; increment/decrement
+for (let i = 0; i < 10; i++) {
+    if (i % 4 === 1) continue;
+    console.log("I:", i);
+
+}
+
+for (let i = 0; i <= 10; i++) {
+    console.log("I:", i);
+}
+
+for (let i = 0; i < 10; i += 2) {
+    console.log("I:", i);
+}
+
+for (let i = 10; i > 0; i--) {
+    console.log("I:", i);
+}
+
+// WHILE loop
+
+// a while loop does not know how long it'll run for
+
+// a DO WHILE loop is basically a while loop that always runs at least once
+let num = 3;
+
+do {
+    num = parseFloat(prompt("Enter a number between 1 and 10:"));
+    if (!(num >= 1 && num <= 10)) {
+        alert(`${num} is NOT a number between 1 and 10!`);
+    }
+} while (!(num >= 1 && num <= 10));
+
+console.log("Your number:", num);
