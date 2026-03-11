@@ -60,4 +60,39 @@ const hoverHandler = function () {
 document.getElementById("myButton").addEventListener("mouseover", hoverHandler);
 
 
-document.getElementById("myButton").removeEventListener("mouseover", hoverHandler)
+document.getElementById("myButton").removeEventListener("mouseover", hoverHandler);
+
+
+// Forms are collections of input elements whach are used to gather data from a user
+
+const trainers = [
+    {
+        name: "JH",
+        age: 31,
+        specialism: "Java"
+    }
+]
+
+document.getElementById("trainerForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    // this -> reference to w/e element the event was called on
+    // ONLY works with anonymous functions (not arrows)
+    console.log("THIS:", this);
+    
+    const newTrainer = {
+        name: this.trainerName.value,
+        age: this.trainerAge.value,
+        specialism: this.trainerSpecialism.value,
+    }
+    trainers.push(newTrainer);
+
+    this.reset();
+    this.trainerName.focus();
+    renderTrainers();
+});
+
+function renderTrainers() {
+    document.getElementById("trainerOutput").textContent = JSON.stringify(trainers, null, 2);
+}
+
+renderTrainers();
