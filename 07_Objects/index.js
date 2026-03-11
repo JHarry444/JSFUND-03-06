@@ -43,3 +43,9 @@ const [title, ...numbers] = nums;
 // the standard data format particularly for sending data over the web
 
 const myJson = JSON.stringify(me);
+
+
+// SHOW OFF BEFORE START:
+for (let key in me) {
+    delete me[key]
+}
