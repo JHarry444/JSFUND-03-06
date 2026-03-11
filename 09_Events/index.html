@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        .dark {
+            background-color: black;
+            color: white;
+        }
+
+        #myButton {
+            background-color: red;
+        }
+
+        #myButton:hover {
+            background-color: green;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Events</h2>
+
+    <button onclick="alert('Yo!')">CLICK ME</button>
+    <button onclick="toggle()">TOGGLE</button>
+    <button id="myButton">Listener</button>
+
+    <section id="counterSection">
+        <h3>Counter</h3>
+        <input type="number" id="counter" value="0" readonly>
+        <br>
+        <!-- <button onclick="updateCounter(event)">-5</button>
+        <button onclick="updateCounter(event)">-1</button>
+        <button onclick="updateCounter(event)">R</button>
+        <button onclick="updateCounter(event)">+1</button>
+        <button onclick="updateCounter(event)">+5</button> -->
+        <button>-9</button>
+        <button>-5</button>
+        <button>-4</button>
+        <button>-1</button>
+        <button>R</button>
+        <button>+1</button>
+        <button>+4</button>
+        <button>+5</button>
+        <button>+9</button>
+    </section>
+
+    <section>
+        <h3>Converter</h3>
+    </section>
+    <script src="./index.js"></script>
+</body>
+
+</html>
