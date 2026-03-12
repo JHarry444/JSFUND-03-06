@@ -1,0 +1,35 @@
+{
+  "trainers": [
+    {
+      "id": "abcde",
+      "name": "JH",
+      "age": 31,
+      "specialism": "Java"
+    },
+    {
+      "id": "fghij",
+      "name": "CG",
+      "age": 33,
+      "specialism": "Web"
+    },
+    {
+      "id": "c5d9",
+      "name": "lr",
+      "age": "45",
+      "specialism": "linux"
+    },
+    {
+      "id": "9a1d",
+      "name": "jb",
+      "age": "27",
+      "specialism": "servicenow"
+    },
+    {
+      "id": "24bc",
+      "name": "ms",
+      "age": "52",
+      "specialism": "oracle"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
